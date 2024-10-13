@@ -35,4 +35,12 @@
   to {
     transform: rotate(360deg);
   }
+
+  
+}
+
+@font-face {
+  font-family: 'Papyrus'; /* اسم الخط الذي قمت بتنزيله */
+  src: url('./fonts/PAPYRUS.TTF') format('truetype'); /* المسار لملف الخط */
+  font-weight: 400;
 }

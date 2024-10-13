@@ -1,0 +1,665 @@
+/* src/styles.css */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Noto+Kufi+Arabic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Lateef', cursive;
+    background-color: #0d174b;
+    /* justify-content: center;  */
+    align-items: center;
+  }
+ 
+  .App {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lateef', cursive;
+    height: 100vh;
+  }
+  
+  nav {
+    background-color: #182051;
+
+    color: white;
+    padding: 1rem;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 1rem;
+  }
+  
+  .content {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px;
+    background: linear-gradient(to right, rgb(116, 1, 161) 0%, rgb(0, 255, 255) 100%);
+    background-image: url('./images/rrr.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f1f0f0;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    display: block; 
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+    font-family: 'Montserrat', sans-serif;
+    display: flex; 
+  }
+  
+.container{
+
+    width: 25%;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 50px;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: #471201c0;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    display: inline; 
+    /* text-align: center;
+    justify-content: center;  */
+    /* align-items: center;  */
+    font-family: 'Montserrat', serif;
+ 
+}
+.aboutUs-container{
+
+    width: 80%;
+    height: 70%;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 50px;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: #471201c0;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block; 
+    text-align: center;
+    justify-content: center;  
+    align-items: center; 
+    font-family: 'Montserrat', serif;
+ 
+}
+
+.search-bar {
+  position: relative;
+  align-items: center;  /*  لتحديد  position  لِـ  العناصر  داخل  الـ  container  */
+  width: 300px; /*  عرض  خانة  البحث  */
+}
+
+.search-bar input {
+  width: 100%; /*  تُملأ  خانة  الإدخال  كامل  العرض  */
+  padding: 8px 12px; /*  حشو  للداخل  */
+  border: 1px solid #ccc; /*  حدود  */
+  border-radius: 4px; /*  زوايا  مُدورة  */
+  font-size: 16px; /*  حجم  الخط  */
+  box-sizing: border-box; /*  للـ  padding  و  border  */
+}
+
+.search-bar button {
+  position: absolute; /*  لتحديد  position  للـ  زر  */
+  top: 2px; /*  مُحاذاة  للأعلى  */
+  right: 1px; /*  مُحاذاة  لليمين  */
+  padding: 8px 12px; /*  حشو  للداخل  */
+  border: none; /*  بدون  حدود  */
+  border-radius: 4px; /*  زوايا  مُدورة  */
+  background-color: #4CAF50; /*  لون  الزر  */
+  color: white; /*  لون  النص  */
+  font-size: 16px; /*  حجم  الخط  */
+  cursor: pointer; /*  مُؤشر  الماوس  */
+}
+
+.trip-form {
+  background-color: #543023c9;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  display: block; 
+  justify-content: center; 
+  flex-direction: column;
+  font-family: 'Lateef', cursive;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.form-group input {
+  padding: 10px;
+  background-color: #79580c;
+  border: 1px solid #dcd8e1;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+.message {
+  color: #0afc32;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #32ea59;
+  color: white;
+  font-size: 16px;
+  font-family: 'Lateef', cursive;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #303f9f;
+}
+.container1 {
+  background: linear-gradient(to right, #471201 0%, rgb(226, 176, 101) 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 50%;
+  margin: 20px;
+  display: block;
+  align-items: center;
+  font-family: 'Lateef', cursive;
+}
+
+
+
+.spottt-image {
+  width: 50%;
+  height: auto;
+  border-radius: 20%;
+
+}
+.profile-image {
+  width: 100px; /*  عرض الصورة  */
+  height: 100px; /*  ارتفاع الصورة  */
+  border-radius: 50%; /*  لجعل الصورة دائرية  */
+  overflow: hidden; /*  لإخفاء أي جزء زائد من الصورة خارج الدائرة  */
+  position: absolute;
+  top: 100px; /*  لرفع الصورة إلى أعلى بمقدار نصف ارتفاعها  */
+  left: 50%;
+  transform: translateX(-50%); /*  لضمان  centering  أفقي مثالي  */
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*  لضمان ظهور  الصورة بشكل صحيح داخل الدائرة  */ 
+}
+.container1 h4 h3{
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  font-family: 'Lateef', cursive;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.container1 h4:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 600px) {
+  .container1 {
+    width: 95%;
+  }
+}
+input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.container2 {
+  background: radial-gradient(ellipse at 50% 50%, rgb(255, 235, 122),#471201);
+  border-radius: 8px;
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 50%;
+  margin: 20px;
+
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lateef', cursive;
+  align-items: center;
+}
+
+.main-container {
+  background: linear-gradient(to right, #473101 0%, rgb(226, 176, 101) 100%);
+
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width:100%;
+  height: 100%;
+  border-radius: 18px;
+  margin: 20x;
+  background-image: url('./images/travrler.png');
+  /* background-size: 80% 100%; */
+ background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: grid;
+  /* gap: 20px; */
+  justify-content: left ;
+  font-family: 'Lateef', cursive;
+ 
+}
+
+.container2 h3 {
+  color: #333;
+  font-family: 'Lateef', cursive;
+  margin: 10px 0;
+}
+.container2img {
+
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+  
+ 
+}
+
+.container3 {
+  background: linear-gradient(to right, #ddb74d, #a36700);
+  border-radius: 8px;
+  box-shadow: 0 20px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 70%;
+  margin: 20px;
+  text-align: center; /* توسيط النص أفقياً */
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center; /* توسيط العناصر عمودياً */
+  font-family: 'Lateef', cursive;
+  align-items: center; /*توسيط العناصر أفقياً*/
+}
+
+.container3 h1 {
+  color: #333;
+  padding: 40px;
+  margin: 10px 0;
+  font-family: 'Lateef', cursive;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.Travel-button, .Delete-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 4px;
+  font-family: 'Lateef', cursive;
+}
+
+.Travel-button {
+  background-color:#471201;
+  color: white;
+  
+}
+.bar-button {
+  background-color: inherit;
+  color: white;
+  border: none;
+  width: 110px;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-left: 20px;
+  font-family: 'Lateef', cursive;
+ 
+}
+
+.Delete-button {
+  background-color: #f44336;
+  color: white;
+  font-family: 'Lateef', cursive;
+}
+
+.Travel-button:hover {
+  background-color: #303f9f;
+}
+.bar-button:hover {
+  background-color: #04123f74;
+}
+
+.Delete-button:hover {
+  background-color: #d32f2f;
+}
+
+
+.trip-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  padding: 20px;
+}
+
+input[type="email"]{
+  
+    padding: 10px; 
+    font-family: 'Lateef', cursive;
+    background-image: url('./images/envelope.png');
+    background-repeat: no-repeat; 
+    background-position: left center; 
+    background-size: 17px;
+    padding-left: 25px;
+    color:#011402;
+    border: 1px solid #423d3d61; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+   display: 'flex';
+    display: block; 
+    margin: 0 auto;
+    margin-bottom: 10px; 
+    box-sizing: border-box;}
+
+
+    .Register-button {
+ 
+        background-color: rgb(96, 60, 255);
+        color: rgb(255, 255, 255);
+        border: none;
+        width: 120px;
+        height: auto;
+        display: block; 
+        display: 'flex';
+        margin: 0 auto;
+        border-radius:10px;
+        font-family: 'Lateef', cursive;
+        font-size: 12px;
+        align-items: center;
+        margin-bottom: 10px;
+        text-align: center;
+      
+      }
+.h3{
+  font-family: 'Lateef', cursive;
+}
+
+input[type="password"]{
+  
+    padding: 10px; 
+    font-family: 'Lateef', cursive;
+    background-image: url('./images/lock.png');
+    background-repeat: no-repeat; 
+    background-position: left center; 
+    background-size: 17px;
+    padding-left: 25px;
+    color:#011402;
+    border: 1px solid #423d3d61; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+   display: 'flex';
+    display: block; 
+    margin: 0 auto;
+    margin-bottom: 10px; 
+    box-sizing: border-box;}
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 0.5rem 1rem;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #7981b3;
+  }
+  .trip-image {
+    width: 100%;
+    height: 200px;
+    
+ 
+  }
+  .bar-image {
+    width: 30%;
+    height: 30px;
+  
+   
+  }
+  .icon-trip-image {
+    width: 30px;
+    height: 30px;
+  
+   
+  }
+
+
+  /* profile.css */
+  .profile-container {
+    width: 400px;
+    margin: 50px auto;
+    background: linear-gradient(45deg, #54fff1, rgb(255, 172, 186));
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    font-family: 'Lateef', cursive;
+    display: block;
+    position: relative; /* إضافة خاصية الوضعية */
+  }
+ 
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute; /* تحديد الوضعية المطلوبة */
+    top: 50%; /* تحديد الجزء العلوي للصورة */
+    left: 50%; /* تحديد الجزء الأيسر للصورة */
+    transform: translate(-50%, -250%); /* توسيط الصورة */
+  }
+  
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .spot-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .profile-info h2 {
+    margin-bottom: 5px;
+    text-align: center;
+    padding-left: 25px;
+    color: #333;
+  }
+  .profile-headerimg{
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+  }
+  .profile-details {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
+  
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .detail-item h3 {
+    font-weight: bold;
+    color: #555;
+  }
+  
+.nav-bar {
+  flex: 1;
+  background: linear-gradient(45deg, #ffc354, #471201);/* أزرق فاتح إلى أخضر فاتح */
+  padding: 13px 0; /* ارتفاع الشريط */
+  color: rgb(0, 0, 0); /* لون النص */
+  width: 100%;
+  display: flex; 
+    text-align: center;
+    justify-content: center; 
+ 
+}
+
+.css-hyum1k-MuiToolbar-root {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 150%;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-height: 56px;
+}
+
+/* CSS for custom select */
+.custom-select-container {
+  position: relative;
+  display: block;
+  width: 200px;
+  margin-left: 300px;
+  margin-top: 1px;
+  font-family: 'Arial', sans-serif;
+}
+
+.custom-select {
+  appearance: none; /* Remove default styling */
+  width: 100%;
+  padding: 7px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-select:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.custom-select option {
+  padding: 10px;
+}
+
+.custom-select-container::after {
+  content: '\25BC'; /* Down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Allow clicking through the arrow */
+  font-size: 12px;
+  color: #333;
+}
+
+.custom-select-container:hover .custom-select {
+  border-color: #888;
+}
+
+/* Optionally, styling for disabled state */
+.custom-select:disabled {
+  background-color: #f5f5f5;
+  color: #888;
+  cursor: not-allowed;
+}
+
+
+.about-container {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #471201c0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 80vh; /* تحديد الارتفاع للحاوية */
+  overflow-y: scroll; /* تفعيل التمرير العمودي */
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+p, ul {
+  line-height: 1.6;
+  color: white;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+
